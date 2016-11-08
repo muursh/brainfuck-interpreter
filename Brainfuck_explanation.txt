@@ -1,0 +1,25 @@
+Brainfuck explanation:
+
+The 8 commands:
+
+'>' increment the pointer
+'<' decrement the pointer
+'+' increment the byte at the pointer
+'-' decrement the byte at the pointer
+'.' output the byte at the pointer
+',' input a byte and store it at the pointer
+'[' if byte at the pointer is zero jump command after to matching ']'
+']' if byte at the pointer is nonzero jump backwards to the matching '['
+
+C examples:
+
+'>' ++ptr;
+'<' --ptr'
+'+' ++*ptr;
+'-' --*ptr;
+'.' putchar(*ptr);
+',' *ptr = getchar();
+'[' while (*ptr){
+']' }
+
+
